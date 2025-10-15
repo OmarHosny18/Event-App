@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.out
+*.test
+main.exe
+
+# Logs
+*.log
+build-errors.log
+air.log
+
+# Databases
+*.db
+data.db
+
+# Environment
+.env
+
+# Temporary files
+tmp/
+cmd/api/tmp/
+
+# OS / Editor junk
+.DS_Store
+.vscode/
+.idea/
+
+# Air live reload temp files
+.air.toml
