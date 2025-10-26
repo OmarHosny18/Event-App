@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"time"
 
 	"rest-api-in-gin/internal/database"
@@ -29,7 +30,7 @@ type application struct {
 
 func main() {
 	// PostgreSQL connection
-	dsn := "postgresql://postgres:@localhost:5432/eventapp?sslmode=disable"
+    dsn := os.Getenv("DATABASE_URL")
 
 	db, err := sql.Open("postgres", dsn)
 	if err != nil {
