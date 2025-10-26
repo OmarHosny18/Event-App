@@ -119,11 +119,11 @@ export function Navbar() {
                       <Avatar
                         className={cn(
                           "h-10 w-10",
-                          generateAvatarColor(user?.name || "U")
+                          generateAvatarColor(user?.Name || "U")
                         )}
                       >
                         <AvatarFallback className="text-white font-semibold">
-                          {getInitials(user?.name || "User")}
+                          {getInitials(user?.Name || "User")}
                         </AvatarFallback>
                       </Avatar>
                     </Button>
@@ -132,10 +132,10 @@ export function Navbar() {
                     <DropdownMenuLabel>
                       <div className="flex flex-col space-y-1">
                         <p className="text-sm font-medium leading-none">
-                          {user?.name}
+                          {user?.Name}
                         </p>
                         <p className="text-xs leading-none text-muted-foreground">
-                          {user?.email}
+                          {user?.Email}
                         </p>
                       </div>
                     </DropdownMenuLabel>
